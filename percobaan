@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+</head>
+<body>
+	<form method="post">
+		<table>
+			<tr>
+				<td>Bilangan 1</td>
+				<td>:</td>
+				<td><input type="number" name="bil1"></td>
+			</tr>
+			<tr>
+				<td>Bilangan 2</td>
+				<td>:</td>
+				<td><input type="number" name="bil2"></td>
+			</tr>
+			<tr>
+				<td>Operator</td>
+				<td>:</td>
+				<td>
+					<select name="operator">
+						<option value="kali">Kali</option>
+						<option value="bagi">bagi</option>
+						<option value="tambah">tambah</option>
+						<option value="kurang">kurang</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" name="submit"></td>
+				</tr>
+			</table>
+		</form>
+
+		<?php 
+		if(isset($_POST['submit'])){
+			function kali(){
+				print $_POST['bil1']*$_POST['bil2'];
+			}
+			function bagi(){
+				print $_POST['bil1']/$_POST['bil2'];
+			}
+			function tambah(){
+				print $_POST['bil1']+$_POST['bil2'];
+			}
+			function kurang(){
+				print $_POST['bil1']-$_POST['bil2'];
+			}
+
+			switch ($_POST['operator']) {
+				case 'kali':
+				kali();
+				break;
+				case 'bagi':
+				bagi();
+				break;
+				case 'tambah':
+				tambah();
+				break;
+				case 'kurang':
+				kurang();
+				break;
+				
+			}
+		}	
+		?>
+
+	</body>
+	</html>
