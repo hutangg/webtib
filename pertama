@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+<body class="body">
+	<html>
+	<head>
+		<title>Layout</title>
+		<body>
+		<table border="1" width="1900px">
+				<!--header-->
+				<tr>
+					<td colspan="2" height="100px"><center>BIODATA</center></td>
+					<!-- tag dihilangkan-->
+				</tr>
+
+				<!--body-->
+				<tr>
+
+					<td width="50px" height="450px">
+						<table>
+							<tr>
+								<td width="200px"><a href="menu1.php">menu 1</a></td>
+							</tr>
+							<tr>
+								<td><a href="menu2.php">menu 2</a></td>
+							</tr>
+						</table>
+					</td>
+					<td width="300px"> <form method="GET" action="lanjut.php">
+						nama:<input type="text" name="nama"><br>
+						kelas: <input type="text" name="kelas">
+						<br>
+						<input type="submit" value ="submit">
+
+
+					</form>
+				</td>
+			</tr>
+
+			<!--footer-->
+			<tr>
+				<td colspan="2" height="50px" align="center">Copyright 2019</td>
+				<!-- tag dihilangkan-->
+			</tr>
+		</body>
+	</head>
+	</html>
+</body>
+</html>
